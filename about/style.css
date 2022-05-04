@@ -1,0 +1,184 @@
+
+:root
+{
+    --darkB:#011627;
+    --clearB:#20A4F3;
+    --vertB:#2EC4B6;
+    --pink:#FF3366;
+    --grey:#F6F7F8;
+    --black:#212529;
+    --pinkClear:#ff648b;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------------------------MAIN CONTENT------------------------------------------- */
+
+.main
+{
+    background-color:rgb(250, 250, 250);
+}
+h1
+{
+    text-align:center;
+    margin:6rem 0 0.5em;
+    font-size:1.8rem;
+    
+    color:var(--black);
+}
+#patient1,#doctor
+{   
+    display:block;
+    width:12%;
+    height:12%;
+    background-color:#2EC4B6;
+    border-radius:50%;
+    padding:0.3rem;
+    margin:0 auto;
+}
+.content
+{
+  padding:1em;
+  
+}
+
+.content span
+{
+    color:var(--vertB);
+    margin-bottom:1em;
+    font-weight: bold;
+ 
+}
+.content p
+{
+    margin-bottom:1em;
+}
+ul
+{
+    list-style:none;
+    
+    
+}
+
+.patient > li,.Doctor > li
+{
+    line-height: 1.5em;
+    padding:0.5em;
+    background-color:#ffffff;
+    margin-bottom:0.4em;
+    /* position: absolute; */
+    /* margin-left:15%;
+   bottom:0; */
+   box-shadow:3px 3px 1px rgba(126, 126, 126, 0.459);
+}
+.patient > li::before,.Doctor > li::before
+{
+    content:"";
+    border-left:0.2em solid var(--vertB);
+    /* margin-right:1em; */
+   position: absolute;
+   height:4.5%;
+   
+   left:26%;
+   /* top:0.1em; */
+}
+.content a
+{
+ text-decoration: none;
+ color:var(--pinkClear);
+}
+
+/* media query */
+@media  (min-width:768px)
+{
+    body {width:100%;}
+     
+    h1
+    {
+        margin-top:0;
+        padding-top:0.7em;
+        margin-left:-35%;
+        font-size:3em;
+      
+    } 
+ .main{
+      background-color: #f9f9f9;
+      width:100%;
+     
+
+  } 
+    #patient1,#doctor
+    {
+        display:block;
+        width:6%;
+        height:6%;
+        margin-left:-5%;
+    }
+    .personal,.professional
+    {
+        margin-bottom: 4em;
+       
+       
+    }
+    .content
+    {
+        font-size:1.2em;
+        width:80%;
+        margin-left:25%;
+    }
+    .content p,.content span
+    {
+        padding-bottom:0.6em;
+        font-size:1.2em;
+    }
+    .patient > li,.Doctor > li
+    {
+        max-width:60%;
+        box-shadow:3px 3px 1px rgba(126, 126, 126, 0.459);
+        margin:20px 0;
+        
+    }
+   #patient1,#doctor
+    {
+        transition:transform 0.5s;
+    }
+    #patient1:hover ,#doctor:hover 
+    {
+        transform:scale(1.2);
+        background-color:#2ec4b527;
+        box-shadow: 4px 4px 3px var(--darkB);
+    }
+    #patient1:hover+p ,#doctor:hover +p
+    {
+        transition:transform 0.5s;
+        color:var(--pinkClear);
+      
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

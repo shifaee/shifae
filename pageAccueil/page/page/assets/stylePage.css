@@ -1,0 +1,276 @@
+:root
+{
+    --darkB:#011627;
+    --clearB:#20A4F3;
+    --vertB:#2EC4B6;
+    --pink:#FF3366;
+    --grey:#F6F7F8;
+    --black:#212529;
+    --pinkClear:#ff648b;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* ----------------------MOBILE FIRST--------------------------- */
+body
+{
+    background-color:#ecf0ff
+}
+
+.holder
+{
+    /* margin-left:5% ; */
+    padding:2.5%;
+    
+}
+.section 
+{ 
+    display:flex;
+    flex-direction: row ;
+
+    width:95%;
+    height:20%;
+    margin: 0 2.5%;
+   
+}
+/* ----------------------Doctors------------------- */
+
+.doctor
+{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+ margin:5% 0;
+ border-radius: 2%;
+ box-shadow: 0 2px 4px rgb(68, 68, 68);
+}
+#profil
+{
+    width:20%;
+    height:30%;
+    border-radius: 50%;
+    margin-top:5%;
+    margin-left:2%;
+}
+.info
+{
+    display :flex;
+    flex-direction: column;
+    
+}
+
+.info > p
+{
+    line-height:-20px;
+    margin-left:5px;
+    font-size: .8rem;
+}
+p[id="location"]
+{
+    margin-bottom:5px;
+    margin-top:-5px;
+}
+
+button
+{
+    /* background-image: linear-gradient(to left top, #2ec4b6, #58cfc3, #78d9cf, #94e4dc, #aeeee8); */
+    background: rgb(46,196,181);
+background: linear-gradient(7deg, rgba(46,196,181,0.7847514005602241) 0%, rgba(46,196,181,0.37298669467787116) 49%, rgba(46,196,181,0.5158438375350141) 100%);
+    border-radius:15px;
+    border:none;
+    font-weight: bold;
+}
+/* ---------Name link style--------- */
+a
+{
+    text-decoration:none;
+}
+a:visited
+{
+    color:var(--vertB)
+}
+a:link
+{
+    color:#2c2c2c;
+    text-decoration:none;
+}
+/* ----------------------MAP------------------- */
+iframe
+{
+    display:none;
+}
+h2
+{
+    text-align:center;
+    color:rgb(255, 255, 255);
+    
+}
+/* ----------------------Doctors------------------- */
+.calendar
+{
+    display:none;
+}
+.smallCalend
+{
+    margin:auto;
+    padding:10px 5px;
+    background-color:rgb(237, 253, 248);
+   
+
+}
+/* ----------------------MEDIA QUERY--------------------------- */
+
+@media (min-width: 768px)
+{
+    h2 {
+        font-size:1.8rem ;
+        color:  #2ec4b6 ;
+        margin-top:10px;
+        margin-left:-25%;
+    }
+    .search
+    {
+       display: block;
+        width:60%;
+        height:10%;
+        background-color:rgb(16, 18, 18);
+        /* height:20%; */
+        margin: 0 2.5%;
+        margin-left:10%;
+    }
+    .section 
+{ 
+    display:flex;
+    flex-direction: row ;
+
+    width:80%;
+    /* height:20%; */
+    margin: 0 2.5%;
+    margin-left:10%;
+   
+}
+.doctors 
+{
+    width:75%;
+}
+.doctor
+{
+   
+    padding: 5px;
+    background: rgb(255, 255, 255);
+ margin:2% 0;
+ border-radius: 15px;
+ 
+ height:15%;
+}
+#profil
+{
+    width:15%;
+    height:80%;
+    border-radius: 50%;
+   margin:3%;
+   margin-top:2%;
+}
+.info
+{
+    line-height:25px;
+    margin:3%;
+    font-size: 1.5rem;
+    margin-bottom:10%
+   
+}
+button
+{
+   
+  
+    border:none;
+    font-weight: bold;
+    padding:3%;
+}
+button:hover
+{
+    background-color:rgb(96, 221, 255);
+    transform: scale(1.1);
+    transition: transform 0.5s .2s ease-out;
+    color: white;
+}
+
+a:hover
+{
+    transform: scale(1.1);
+    transition: transform 0.5s .2s ease-out;
+}
+/* -------------------MAP----------------- */
+iframe {
+    display:inline-block;
+    width:400px;
+    height:950px;
+   margin-left:5%;
+   margin-top:5%;
+
+}
+.smallCalend
+{
+    display:none;
+}
+/* --------------CALENDAR-------------- */
+.calendar{
+  display:inline-flex;
+flex-direction:column;
+
+margin:auto;
+font-size: 1.1rem;
+
+}
+
+.horaire >span
+{
+    background-color: #2ec4b53f;
+    border-radius: 3px;
+    padding:7px;
+    margin:10px;
+}
+.horaire 
+{
+    margin:10px;
+}
+#week,#sam
+{
+    padding:auto;
+    display:inline-block;
+    margin-left:12%;
+    font-size:1rem;
+    font-weight: bold;
+}
+#sam
+{
+    margin-left:27%;
+}
+.horaire >span:hover
+{
+    background-color:rgb(223, 255, 244);
+}
+.fa
+{
+    font-weight:bold;
+    font-size:30px;
+}
+}
+@media (min-width: 768px) and (max-width:992px)
+{
+    iframe
+    {
+        display:none;
+    }
+    .doctors 
+{
+    width:100%;
+    margin:0;
+}
+}
