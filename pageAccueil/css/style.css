@@ -912,3 +912,8 @@ nav ul li a {
   margin-top: 40px;
   color: #2ec4b6;
 }
+@media (min-width: 950px) and (max-width: 1350px) {
+  .a {
+    display: none;
+  }
+}
