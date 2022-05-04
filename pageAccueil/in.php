@@ -36,9 +36,9 @@
      <ul>
          <li><a href="in.php" class="active  ">Accueil</a></li>
          <li><a href="../signIn/signIn.php">Se connecter</a></li>
-         <li><a href="#blogs">Services</a></li>
-         <li><a href="../about"> À propos </a></li>
-         <li><a href="../contactus/contact.php">Contact</a></li>
+         <li><a class="a" href="#blogs">Services</a></li>
+         <li><a class="a" href="../about"> À propos </a></li>
+         <li><a  class="a" href="../contactus/contact.php">Contact</a></li>
 
      </ul>
      
