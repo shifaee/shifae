@@ -9,7 +9,7 @@ Chaimae el Beqqal
 
 Ghizlane kassimi 
 
-Rime hassani El idrissi
+Rim hassani idrissi
 
 El boujdaini chorouk
 
