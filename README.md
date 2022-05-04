@@ -5,13 +5,13 @@ la gestion des rendez-vous entre les médecins et les patients avec trois sortes
 
 Membres du groupe : 
 
-Chaimae el Beqqal 
+ El Beqqal Chaimae 
 
-Ghizlane kassimi 
+Kassimi Ghizlane 
 
 Rim hassani idrissi
 
-El boujdaini chorouk
+El bojaddaini chorouk
 
 Tahir Meryem 
 
